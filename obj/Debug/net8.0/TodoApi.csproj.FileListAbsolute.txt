@@ -265,3 +265,4 @@ E:\project\asp.net\todoapi\bin\Debug\net8.0\ZstdSharp.dll
 E:\project\asp.net\todoapi\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
 E:\project\asp.net\todoapi\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
 E:\project\asp.net\todoapi\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
+E:\project\asp.net\todoapi\obj\Debug\net8.0\TodoApi.sourcelink.json
