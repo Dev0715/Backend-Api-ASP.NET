@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.Configure<BookStoreDatabaseSettings>(
-  builder.Configuration.GetSection(nameof(BookStoreDatabaseSettings)));
+  builder.Configuration.GetSection("BookStoreDatabase"));
 
 builder.Services.AddSingleton<BooksService>();
 

@@ -1,6 +1,7 @@
 using TodoApi.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using MongoDB.Bson;
 
 namespace TodoApi.Services;
 
@@ -10,6 +11,7 @@ public class BooksService
 
   public BooksService(IOptions<BookStoreDatabaseSettings> bookStoreDatabaseSettings)
   {
+    Console.WriteLine($"{bookStoreDatabaseSettings.Value.ToJson()}");
     var mongoClient = new MongoClient(bookStoreDatabaseSettings.Value.ConnectionString);
     var mongoDatabase = mongoClient.GetDatabase(bookStoreDatabaseSettings.Value.DatabaseName);
     _booksCollection = mongoDatabase.GetCollection<Book>(bookStoreDatabaseSettings.Value.BooksCollectionName);
